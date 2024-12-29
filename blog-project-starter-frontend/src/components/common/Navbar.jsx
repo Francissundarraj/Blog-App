@@ -35,7 +35,10 @@ function Navbar() {
             <Link className='list-none px-5'>About</Link>
 {
 
-log?<button className='button-style hidden md:block' onClick={logout} >Logout</button>: <button className='button-style hidden md:block' onClick={()=>navigate("/login")}>Login</button>
+log?<button className='button-style hidden md:block' onClick={() => {
+  logout(); 
+  navigate("/login"); 
+}} >Logout</button>: <button className='button-style hidden md:block' onClick={()=>navigate("/login")}>Login</button>
   
 }
 
