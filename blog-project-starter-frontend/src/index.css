@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-size: 16px;
+  background-color: #011627;
+  padding: 20px;
+}
+.neon-text {
+  color: #ef5350; /* Neon color */
+  text-shadow: 
+    0 0 5px #ef5350, 
+    0 0 3px #ef5350, 
+    0 0 15px #d99fff, 
+    0 0 20px #d99fff; /* Glowing effect */
+}
